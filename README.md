@@ -64,7 +64,7 @@ graph TD
 
 ---
 
-## 🐧 How to Build and Run
+## How to Build and Run
 
 This project **must be built in an x86-64 Linux environment.**
 A preconfigured **Dockerfile** handles this automatically.
