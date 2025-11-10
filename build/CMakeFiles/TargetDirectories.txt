@@ -1,0 +1,10 @@
+/home/builder/project/build/CMakeFiles/ultra_core.dir
+/home/builder/project/build/CMakeFiles/ultra_network.dir
+/home/builder/project/build/CMakeFiles/ultra_md.dir
+/home/builder/project/build/CMakeFiles/ultra_strategy.dir
+/home/builder/project/build/CMakeFiles/ultra_risk.dir
+/home/builder/project/build/CMakeFiles/ultra_exec.dir
+/home/builder/project/build/CMakeFiles/live_engine.dir
+/home/builder/project/build/CMakeFiles/test.dir
+/home/builder/project/build/CMakeFiles/edit_cache.dir
+/home/builder/project/build/CMakeFiles/rebuild_cache.dir

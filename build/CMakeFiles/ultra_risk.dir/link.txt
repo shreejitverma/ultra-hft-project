@@ -1,0 +1,2 @@
+/usr/bin/ar qc libultra_risk.a CMakeFiles/ultra_risk.dir/src/risk/pretrade_checker.cpp.o
+/usr/bin/ranlib libultra_risk.a

@@ -1,0 +1,8 @@
+# Optimized for minimum latency (sacrifice throughput if needed)
+[tuning]
+profile = "low_latency"
+cpu_governor = "performance"
+turbo_boost = true
+c_states = false
+irq_affinity = [0, 1]
+rps_cpus = [2, 3]

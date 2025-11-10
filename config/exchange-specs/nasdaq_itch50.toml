@@ -1,0 +1,21 @@
+[protocol]
+name = "NASDAQ_ITCH_5.0"
+version = "5.0"
+byte_order = "big_endian"
+
+[messages]
+system_event = 0x53
+stock_directory = 0x52
+stock_trading_action = 0x48
+add_order = 0x41
+add_order_mpid = 0x46
+order_executed = 0x45
+order_executed_with_price = 0x43
+order_cancel = 0x58
+order_delete = 0x44
+order_replace = 0x55
+trade = 0x50
+cross_trade = 0x51
+broken_trade = 0x42
+noii = 0x49
+rpii = 0x4E

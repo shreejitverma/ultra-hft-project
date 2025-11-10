@@ -1,0 +1,2 @@
+/usr/bin/ar qc libultra_network.a CMakeFiles/ultra_network.dir/src/network/parsers/ethernet_parser.cpp.o
+/usr/bin/ranlib libultra_network.a

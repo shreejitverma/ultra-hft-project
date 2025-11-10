@@ -1,0 +1,2 @@
+/usr/bin/ar qc libultra_strategy.a CMakeFiles/ultra_strategy.dir/src/strategy/rl-inference/rl_policy_stub.cpp.o
+/usr/bin/ranlib libultra_strategy.a

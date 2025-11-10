@@ -1,0 +1,2 @@
+/usr/bin/ar qc libultra_md.a CMakeFiles/ultra_md.dir/src/market-data/itch/decoder.cpp.o CMakeFiles/ultra_md.dir/src/market-data/book/order_book_l2.cpp.o
+/usr/bin/ranlib libultra_md.a

@@ -1,0 +1,47 @@
+[
+{
+  "directory": "/home/builder/project/build",
+  "command": "/usr/bin/c++ -DULTRA_CORE_BUILD -I/home/builder/project/include -I/home/builder/project/third_party  -Wall -Wextra -Werror -march=native -mtune=native -mavx2 -msse4.2 -mfma -O3 -DNDEBUG -flto -ffast-math -funroll-loops -finline-functions -fomit-frame-pointer -std=c++20 -o CMakeFiles/ultra_core.dir/src/core/time/rdtsc_clock.cpp.o -c /home/builder/project/src/core/time/rdtsc_clock.cpp",
+  "file": "/home/builder/project/src/core/time/rdtsc_clock.cpp"
+},
+{
+  "directory": "/home/builder/project/build",
+  "command": "/usr/bin/c++  -I/home/builder/project/include -I/home/builder/project/third_party  -Wall -Wextra -Werror -march=native -mtune=native -mavx2 -msse4.2 -mfma -O3 -DNDEBUG -flto -ffast-math -funroll-loops -finline-functions -fomit-frame-pointer -std=c++20 -o CMakeFiles/ultra_network.dir/src/network/parsers/ethernet_parser.cpp.o -c /home/builder/project/src/network/parsers/ethernet_parser.cpp",
+  "file": "/home/builder/project/src/network/parsers/ethernet_parser.cpp"
+},
+{
+  "directory": "/home/builder/project/build",
+  "command": "/usr/bin/c++  -I/home/builder/project/include -I/home/builder/project/third_party  -Wall -Wextra -Werror -march=native -mtune=native -mavx2 -msse4.2 -mfma -O3 -DNDEBUG -flto -ffast-math -funroll-loops -finline-functions -fomit-frame-pointer -std=c++20 -o CMakeFiles/ultra_md.dir/src/market-data/itch/decoder.cpp.o -c /home/builder/project/src/market-data/itch/decoder.cpp",
+  "file": "/home/builder/project/src/market-data/itch/decoder.cpp"
+},
+{
+  "directory": "/home/builder/project/build",
+  "command": "/usr/bin/c++  -I/home/builder/project/include -I/home/builder/project/third_party  -Wall -Wextra -Werror -march=native -mtune=native -mavx2 -msse4.2 -mfma -O3 -DNDEBUG -flto -ffast-math -funroll-loops -finline-functions -fomit-frame-pointer -std=c++20 -o CMakeFiles/ultra_md.dir/src/market-data/book/order_book_l2.cpp.o -c /home/builder/project/src/market-data/book/order_book_l2.cpp",
+  "file": "/home/builder/project/src/market-data/book/order_book_l2.cpp"
+},
+{
+  "directory": "/home/builder/project/build",
+  "command": "/usr/bin/c++  -I/home/builder/project/include -I/home/builder/project/third_party  -Wall -Wextra -Werror -march=native -mtune=native -mavx2 -msse4.2 -mfma -O3 -DNDEBUG -flto -ffast-math -funroll-loops -finline-functions -fomit-frame-pointer -std=c++20 -o CMakeFiles/ultra_strategy.dir/src/strategy/rl-inference/rl_policy_stub.cpp.o -c /home/builder/project/src/strategy/rl-inference/rl_policy_stub.cpp",
+  "file": "/home/builder/project/src/strategy/rl-inference/rl_policy_stub.cpp"
+},
+{
+  "directory": "/home/builder/project/build",
+  "command": "/usr/bin/c++  -I/home/builder/project/include -I/home/builder/project/third_party  -Wall -Wextra -Werror -march=native -mtune=native -mavx2 -msse4.2 -mfma -O3 -DNDEBUG -flto -ffast-math -funroll-loops -finline-functions -fomit-frame-pointer -std=c++20 -o CMakeFiles/ultra_risk.dir/src/risk/pretrade_checker.cpp.o -c /home/builder/project/src/risk/pretrade_checker.cpp",
+  "file": "/home/builder/project/src/risk/pretrade_checker.cpp"
+},
+{
+  "directory": "/home/builder/project/build",
+  "command": "/usr/bin/c++  -I/home/builder/project/include -I/home/builder/project/third_party  -Wall -Wextra -Werror -march=native -mtune=native -mavx2 -msse4.2 -mfma -O3 -DNDEBUG -flto -ffast-math -funroll-loops -finline-functions -fomit-frame-pointer -std=c++20 -o CMakeFiles/ultra_exec.dir/src/execution/gateway_sim.cpp.o -c /home/builder/project/src/execution/gateway_sim.cpp",
+  "file": "/home/builder/project/src/execution/gateway_sim.cpp"
+},
+{
+  "directory": "/home/builder/project/build",
+  "command": "/usr/bin/c++  -I/home/builder/project/include -I/home/builder/project/third_party  -Wall -Wextra -Werror -march=native -mtune=native -mavx2 -msse4.2 -mfma -O3 -DNDEBUG -flto -ffast-math -funroll-loops -finline-functions -fomit-frame-pointer -std=c++20 -o CMakeFiles/live_engine.dir/apps/live-engine/main.cpp.o -c /home/builder/project/apps/live-engine/main.cpp",
+  "file": "/home/builder/project/apps/live-engine/main.cpp"
+},
+{
+  "directory": "/home/builder/project/build",
+  "command": "/usr/bin/c++  -I/home/builder/project/include -I/home/builder/project/third_party  -Wall -Wextra -Werror -march=native -mtune=native -mavx2 -msse4.2 -mfma -O3 -DNDEBUG -flto -ffast-math -funroll-loops -finline-functions -fomit-frame-pointer -std=c++20 -o CMakeFiles/live_engine.dir/apps/live-engine/engine.cpp.o -c /home/builder/project/apps/live-engine/engine.cpp",
+  "file": "/home/builder/project/apps/live-engine/engine.cpp"
+}
+]

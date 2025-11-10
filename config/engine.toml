@@ -1,0 +1,88 @@
+[system]
+name = "ultra-hft"
+version = "1.0.0"
+log_level = "INFO"
+
+[hardware]
+cpu_affinity = [2, 3, 4, 5]  # Isolated cores
+numa_node = 0
+huge_pages = true
+huge_page_size_mb = 2
+
+[network]
+interface = "eth0"
+mtu = 9000  # Jumbo frames
+kernel_bypass = true
+use_dpdk = false
+
+[market_data]
+exchange = "NASDAQ"
+protocol = "ITCH_5.0"
+multicast_group = "233.54.12.0"
+multicast_port = 26477
+symbols = ["AAPL", "MSFT", "GOOGL", "AMZN", "NVDA"]
+
+[market_data.feed_handler]
+buffer_size = 65536
+prefetch_lines = 8
+batch_processing = true
+
+[order_book]
+levels = 10  # L2 book depth
+implementation = "array_based"  # array_based, tree_based
+update_mode = "incremental"
+
+[strategy]
+type = "rl_market_maker"
+model_path = "models/rl_policy.bin"
+update_frequency_ns = 100  # Sub-microsecond
+
+[strategy.rl_policy]
+input_features = [
+    "bid_price_0", "bid_size_0",
+    "ask_price_0", "ask_size_0",
+    "mid_price", "spread",
+    "imbalance", "volatility",
+    "inventory", "pnl"
+]
+hidden_layers = [64, 32]
+activation = "relu"
+inference_batch_size = 1
+
+[strategy.avellaneda_stoikov]
+risk_aversion = 0.1
+volatility_window = 100
+inventory_penalty = 0.01
+
+[risk]
+max_position_shares = 10000
+max_notional_usd = 10000000
+max_order_size = 1000
+max_orders_per_second = 10000
+kill_switch_loss_usd = 50000
+
+[risk.inventory]
+target_position = 0
+reversion_speed = 0.1
+max_deviation = 5000
+
+[execution]
+gateway_type = "simulation"  # simulation, fix, ouch
+smart_routing = true
+venue_preference = ["NASDAQ", "NYSE", "ARCA"]
+
+[execution.order_routing]
+latency_weight = 0.7
+fee_weight = 0.2
+fill_rate_weight = 0.1
+
+[telemetry]
+enabled = true
+metrics_port = 9090
+latency_histogram_buckets = [100, 250, 500, 1000, 2500, 5000, 10000]
+publish_interval_ms = 1000
+
+[telemetry.monitoring]
+tick_to_trade_alert_ns = 1000
+memory_alert_mb = 1000
+cpu_alert_percent = 90

@@ -1,0 +1,2 @@
+/usr/bin/ar qc libultra_exec.a CMakeFiles/ultra_exec.dir/src/execution/gateway_sim.cpp.o
+/usr/bin/ranlib libultra_exec.a

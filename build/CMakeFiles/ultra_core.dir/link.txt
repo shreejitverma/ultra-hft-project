@@ -1,0 +1,2 @@
+/usr/bin/ar qc libultra_core.a CMakeFiles/ultra_core.dir/src/core/time/rdtsc_clock.cpp.o
+/usr/bin/ranlib libultra_core.a
