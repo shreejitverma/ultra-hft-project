@@ -1,4 +1,5 @@
-# Ultra HFT: AI-Integrated Trading System
+# Trishul: An AI-Driven Ultra-Low-Latency Market Making and Execution Platform
+A fast, sharp, and lethal system to execute trades
 
 This project is the **C++ software implementation** of the *Hybrid Control Plane* and simulation engine described in the Master's thesis, **"AI-Integrated FPGA for Market Making in Volatile Environments."**
 
